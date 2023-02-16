@@ -44,11 +44,11 @@ let s:voidGray1 = {'gui': '#3E3D32', 'cterm256': '237'}
 let s:voidGray2 = {'gui': '#49483E', 'cterm256': '239'}
 let s:voidGray3 = {'gui': '#6B6B6B', 'cterm256': '242'}
 let s:voidGray4 = {'gui': '#B0B0B0', 'cterm256': '249'}
-let s:voidSteel = {'gui': '#D0D0D0', 'cterm256': '252'}
+let s:voidSteel = {'gui': '#eeeeee', 'cterm256': '255'}
 let s:voidBlue = {'gui': '#699B9B', 'cterm256': '109'}
 let s:voidGreen = {'gui': '#569F7A', 'cterm256': '72'}
 let s:voidGold = {'gui': '#8E700B', 'cterm256': '136'}
-let s:voidRed = {'gui': '#821A1A', 'cterm256': '1'}
+let s:voidRed = {'gui': '#f21A1A', 'cterm256': '1'}
 let s:voidRed2 = {'gui': '#FF0000', 'cterm256': '196'}
 let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 
@@ -58,10 +58,10 @@ let s:none = {'gui': 'NONE', 'cterm256': 'NONE'}
 "    <sid>hi(GROUP, FOREGROUND, BACKGROUND, ATTRIBUTE)
 
 " Editor
-call <sid>hi('ColorColumn', s:none, s:voidGray1, 'none')
+call <sid>hi('ColorColumn', s:none, s:voidGray4, 'none')
 call <sid>hi('Cursor', s:voidSteel, s:voidBlack2, 'none')
 call <sid>hi('CursorColumn', s:none, s:voidGray1, 'none')
-call <sid>hi('CursorLine', s:none, s:voidGray1, 'none')
+call <sid>hi('CursorLine', s:none, s:voidGray4, 'none')
 call <sid>hi('CursorLineNr', s:voidBlack, s:voidGray1, 'none')
 call <sid>hi('Directory', s:voidBlack, s:none, 'none')
 call <sid>hi('FoldColumn', s:none, s:voidBlack2, 'none')
@@ -77,7 +77,7 @@ call <sid>hi('SignColumn', s:none, s:voidBlack2, 'none')
 call <sid>hi('StatusLine', s:voidSteel, s:voidBlack, 'none')
 call <sid>hi('StatusLineNC', s:voidGray3, s:voidBlack2, 'none')
 call <sid>hi('VertSplit', s:voidBlack, s:voidGray3, 'none')
-call <sid>hi('Visual', s:none, s:voidGray2, 'none')
+call <sid>hi('Visual', s:voidSteel, s:voidGray2, 'none')
 
 " General
 call <sid>hi('Boolean', s:voidBlack, s:none, 'none')

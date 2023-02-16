@@ -89,7 +89,7 @@ call <sid>hi('Define', s:voidSteel, s:none, 'none')
 call <sid>hi('DiffAdd', s:voidBlack, s:voidGreen, 'none')
 call <sid>hi('DiffChange', s:voidBlack, s:voidGold, 'none')
 call <sid>hi('DiffDelete', s:voidSteel, s:voidRed, 'none')
-call <sid>hi('DiffText', s:voidGray1, s:voidBlue, 'none')
+call <sid>hi('DiffText', s:voidBlack2, s:voidBlue, 'none')
 call <sid>hi('ErrorMsg', s:voidSteel, s:voidRed, 'none')
 call <sid>hi('Float', s:voidSteel, s:none, 'none')
 call <sid>hi('Function', s:voidSteel, s:none, 'none')
@@ -120,12 +120,12 @@ if &diff
   call <sid>hi('DiffAdd', s:voidBlack, s:voidGreen, 'none')
   call <sid>hi('DiffChange', s:voidBlack, s:voidGold, 'none')
   call <sid>hi('DiffDelete', s:voidRed2, s:voidRed, 'none')
-  call <sid>hi('DiffText', s:voidGray1, s:voidBlue, 'none')
+  call <sid>hi('DiffText', s:voidBlack2, s:voidBlue, 'none')
 else
   call <sid>hi('DiffAdd', s:voidGreen, s:none, 'none')
   call <sid>hi('DiffChange', s:voidGold, s:none, 'none')
   call <sid>hi('DiffDelete', s:voidRed2, s:none, 'none')
-  call <sid>hi('DiffText', s:voidSteel, s:voidBlue, 'none')
+  call <sid>hi('DiffText', s:voidBlack2, s:voidBlue, 'none')
 endif
 
 " ------------

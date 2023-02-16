@@ -38,11 +38,11 @@ endfun
 " ==========================
 " Color Variables
 " ==========================
-let s:voidBlack = {'gui': '#1C1C1C', 'cterm256': '234'}
+let s:voidBlack = {'gui': '#3C3C3C', 'cterm256': '234'}
 let s:voidBlack2 = {'gui': '#262626', 'cterm256': '235'}
 let s:voidGray1 = {'gui': '#3E3D32', 'cterm256': '237'}
 let s:voidGray2 = {'gui': '#49483E', 'cterm256': '239'}
-let s:voidGray3 = {'gui': '#6B6B6B', 'cterm256': '242'}
+let s:voidGray3 = {'gui': '#6B6B6B', 'cterm256': '244'} " Adjusted cterm256
 let s:voidGray4 = {'gui': '#B0B0B0', 'cterm256': '249'}
 let s:voidSteel = {'gui': '#D0D0D0', 'cterm256': '252'}
 let s:voidBlue = {'gui': '#699B9B', 'cterm256': '109'}
@@ -125,7 +125,7 @@ else
   call <sid>hi('DiffAdd', s:voidGreen, s:none, 'none')
   call <sid>hi('DiffChange', s:voidGold, s:none, 'none')
   call <sid>hi('DiffDelete', s:voidRed2, s:none, 'none')
-  call <sid>hi('DiffText', s:voidSteel, s:voidBlue, 'none')
+  call <sid>hi('DiffText', s:voidGray1, s:voidBlue, 'none')
 endif
 
 " ------------
