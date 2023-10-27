@@ -37,6 +37,8 @@ endfun
 
 " ==========================
 " Color Variables
+"   https://vim.fandom.com/wiki/Xterm256_color_names_for_console_Vim
+"   https://stackoverflow.com/a/76134182/4394359
 " ==========================
 let s:voidBlack = {'gui': '#121212', 'cterm256': '233'}
 let s:voidBlack2 = {'gui': '#262626', 'cterm256': '235'}
@@ -44,6 +46,7 @@ let s:voidGray1 = {'gui': '#3E3D32', 'cterm256': '237'}
 let s:voidGray2 = {'gui': '#49483E', 'cterm256': '239'}
 let s:voidGray3 = {'gui': '#6B6B6B', 'cterm256': '242'}
 let s:voidGray4 = {'gui': '#B0B0B0', 'cterm256': '249'}
+let s:voidGray5 = {'gui': '#D0D0D0', 'cterm256': '252'}
 let s:voidSteel = {'gui': '#eeeeee', 'cterm256': '255'}
 let s:voidBlue = {'gui': '#699B9B', 'cterm256': '109'}
 let s:voidGreen = {'gui': '#569F7A', 'cterm256': '72'}
@@ -114,6 +117,8 @@ call <sid>hi('Todo', s:voidGray3, s:none, 'inverse,bold')
 call <sid>hi('Type', s:none, s:none, 'none')
 call <sid>hi('Underlined', s:none, s:none, 'underline')
 call <sid>hi('WarningMsg', s:voidBlack, s:voidRed, 'none')
+" For listchars in init.vim
+call <sid>hi('Whitespace', s:voidGray5, s:none, 'none')
 
 " Diff Mode
 if &diff
